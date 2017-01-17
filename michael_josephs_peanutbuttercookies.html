@@ -58,6 +58,36 @@
         </ol>
     </section>
 
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <form action="/reviews" method="post">
+        <label for="reviewer">Reviewer</label>
+        <input type="text" id="reviewer">
+
+        <label for="rating">Rating</label>
+        <input type="radio" name="rating" value="1" checked>
+        <input type="radio" name="rating" value="2">
+        <input type="radio" name="rating" value="3">
+        <input type="radio" name="rating" value="4">
+        <input type="radio" name="rating" value="5">
+
+        <select class="expertise" name="cooking expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+
+        <label for="Review">Review
+          <textarea name="review"></textarea>
+        </label>
+
+        <!-- input submit review not included in instructions but in example -->
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
+
     <footer>
       <p>
         Original recipe provided by Shirley Sadler <a href="https://en.wikipedia.org/wiki/Peanut_butter_cookie"> here</a>.
